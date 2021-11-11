@@ -369,7 +369,7 @@ const main = () => {
         baseDeDatos = db.db('xforce')
         console.log("conexion base de datos exitosa")
 
-        const port = process.env.PORT;
+        const port = process.env.PORT || 5000;
         return (
             //decirle a la app que este escuchando los eventos, sirve para abrir el canal de comunicacion
             //se pone el  puerto 5000 para express por convencion deberia correr en 5000 o 5050
